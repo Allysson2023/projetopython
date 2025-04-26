@@ -23,6 +23,7 @@ ssh-keygen -C 'COMENTÁRIO'
 
 ```
 ssh usuário@IP_SERVIDOR
+ssh -i ~/.ssh/id_rsa projetopython@34.134.2.196
 ```
 
 ### Comandos iniciais
@@ -34,7 +35,7 @@ sudo apt autoremove -y
 sudo apt install build-essential -y
 
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.11 python3.11-venv
+sudo apt install python3.11 python3.11-venv -y
 
 sudo apt install nginx -y
 sudo apt install certbot python3-certbot-nginx -y
@@ -54,35 +55,35 @@ git config --global init.defaultBranch main
 Criando as pastas do projeto e repositório
 
 ```
-mkdir ~/projetoepo ~/projetoapp
+mkdir ~/projectepo ~/contactapp
 ```
 
 Configurando os repositórios
 
 ```
-cd ~/projetoepo
+cd ~/projectepo
 git init --bare
 cd ..
-cd ~/projetoapp
+cd ~/contactapp
 git init
-git remote add projetoepo ~/projetoepo
+git remote add projectepo ~/projectepo
 git add .
 git commit -m 'Initial'
-git push projetoepo main -u # erro
+git push projectepo main -u # erro
 ```
 
 No seu computador local
 
 ```
-git remote add projetoepo usuario@IP_SERVIDOR:~/projetoepo
-git push projetoepo main
+git remote add projectepo usuario@IP_SERVIDOR:~/projectepo
+git push projectepo main
 ```
 
 No servidor
 
 ```
-cd ~/projetoapp
-git pull projetoepo main
+cd ~/contactapp
+git pull projectepo main
 ```
 
 ## Configurando o Postgresql
@@ -90,12 +91,16 @@ git pull projetoepo main
 ```
 sudo -u postgres psql
 
-postgres=# create role usuario_agenda with login superuser createdb createrole password 'senha_usuario_agenda';
+postgres=# create role project_django with login superuser createdb createrole password 'primeiroprojeto1234';
+
 CREATE ROLE
-postgres=# create database projeto_agenda with owner usuario_agenda;
+
+postgres=# create database base_projeto with owner project_django;
 CREATE DATABASE
-postgres=# grant all privileges on database projeto_agenda to usuario_agenda;
+
+postgres=# grant all privileges on database base_projeto to project_django;
 GRANT
+
 postgres=# \q
 
 sudo systemctl restart postgresql
@@ -104,7 +109,7 @@ sudo systemctl restart postgresql
 ## Criando o local_settings.py no servidor
 
 ```
-nano ~/projetoapp/project/local_settings.py
+nano ~/contactapp/project/local_settings.py
 ```
 
 Cole os dados.
@@ -112,7 +117,7 @@ Cole os dados.
 ## Configurando o Django no servidor
 
 ```
-cd ~/projetoapp
+cd ~/contactapp
 python3.11 -m venv venv
 . venv/bin/activate
 pip install --upgrade pip
