@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
 ]
 
 # Imagens bota fotos
-STATIC_ROOT =  BASE_DIR / 'static' # Collectstatic
+STATIC_ROOT = str(BASE_DIR / 'static') # Collectstatic
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
