@@ -1,8 +1,0 @@
-[Unit]
-Description=gunicorn  contact socket
-
-[Socket]
-ListenStream=/run/ contact.socket
-
-[Install]
-WantedBy=sockets.target
