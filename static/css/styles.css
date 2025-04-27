@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    justify-items: center;
+    align-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu h1 a {
+    color: white;
+}
+.conteiner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+.registra-link {
+    display: flex;
+    text-align: center;
+    border:  0.02rem solid red;
+    
+    background-color: rgb(6, 248, 6);
+    border-radius: 10rem;
+    box-shadow:  0 10px 14px rgba(0, 255, 76, 0.5);
+    /* width: 80%; */
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem;
+    align-items: center;
+}
