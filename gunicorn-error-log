@@ -1662,3 +1662,69 @@
  - - [27/Apr/2025:17:50:08 +0000] "GET /docker-compose.prod.yml HTTP/1.1" 404 179 "-" "l9explore/1.2.2"
 [2025-04-27 17:50:16 +0000] [132979] [DEBUG] GET /
  - - [27/Apr/2025:17:50:16 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 17:52:49 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:17:52:49 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:52:50 +0000] [132977] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:17:52:50 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:52:51 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:17:52:51 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:52:52 +0000] [132978] [DEBUG] GET /
+ - - [27/Apr/2025:17:52:52 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:52:54 +0000] [132976] [DEBUG] GET /
+ - - [27/Apr/2025:17:52:54 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:54:21 +0000] [132975] [DEBUG] GET /
+ - - [27/Apr/2025:17:54:21 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 17:54:22 +0000] [132978] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:17:54:22 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 17:57:50 +0000] [132977] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:17:57:50 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:57:52 +0000] [132975] [DEBUG] GET /
+ - - [27/Apr/2025:17:57:52 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:58:08 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:17:58:08 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+[2025-04-27 17:58:47 +0000] [132976] [DEBUG] GET /
+ - - [27/Apr/2025:17:58:47 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 17:58:51 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:17:58:51 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36"
+[2025-04-27 18:02:09 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:02:09 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:02:13 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:18:02:13 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:02:21 +0000] [132975] [DEBUG] GET /
+ - - [27/Apr/2025:18:02:21 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:02:23 +0000] [132976] [DEBUG] GET /
+ - - [27/Apr/2025:18:02:23 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:02:41 +0000] [132974] [DEBUG] GET /
+ - - [27/Apr/2025:18:02:41 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:03:00 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:18:03:00 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+[2025-04-27 18:03:01 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:18:03:01 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Linux; U; Android 4.3; en-us; SM-N900T Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+[2025-04-27 18:03:24 +0000] [132974] [DEBUG] GET /
+ - - [27/Apr/2025:18:03:24 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:03:30 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:03:30 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
+[2025-04-27 18:05:22 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:18:05:22 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:05:23 +0000] [132977] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:18:05:23 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:05:36 +0000] [132975] [DEBUG] GET /
+ - - [27/Apr/2025:18:05:36 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:05:37 +0000] [132976] [DEBUG] GET /
+ - - [27/Apr/2025:18:05:37 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:05:37 +0000] [132974] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:18:05:37 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:10:00 +0000] [132977] [DEBUG] GET /
+ - - [27/Apr/2025:18:10:00 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+[2025-04-27 18:15:19 +0000] [132974] [DEBUG] GET /
+ - - [27/Apr/2025:18:15:19 +0000] "GET / HTTP/1.1" 200 599 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:15:19 +0000] [132979] [DEBUG] GET /favicon.ico
+ - - [27/Apr/2025:18:15:19 +0000] "GET /favicon.ico HTTP/1.1" 404 179 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:15:20 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:15:20 +0000] "GET / HTTP/1.1" 200 599 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:15:20 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:15:20 +0000] "GET / HTTP/1.1" 200 599 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:15:20 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:15:20 +0000] "GET / HTTP/1.1" 200 599 "http://34.134.2.196/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+[2025-04-27 18:15:31 +0000] [132979] [DEBUG] GET /
+ - - [27/Apr/2025:18:15:31 +0000] "GET / HTTP/1.1" 200 599 "-" "Mozilla/5.0 (Android 14; Mobile; rv:137.0) Gecko/137.0 Firefox/137.0"
