@@ -91,14 +91,15 @@ git pull projectepo main
 ```
 sudo -u postgres psql
 
-postgres=# create role project_django with login superuser createdb createrole password 'primeiroprojeto1234';
+
+postgres=# create role project_django2 with login superuser createdb createrole password 'primeiroprojeto1234';
 
 CREATE ROLE
 
-postgres=# create database base_projeto with owner project_django;
+postgres=# create database base_projeto with owner project_django2;
 CREATE DATABASE
 
-postgres=# grant all privileges on database base_projeto to project_django;
+postgres=# grant all privileges on database base_projeto to project_django2;
 GRANT
 
 postgres=# \q

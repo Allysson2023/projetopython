@@ -4,7 +4,7 @@
 # __YOUR_USER__ your user name
 # __APP_ROOT_NAME__ the folder name of your project
 # __WSGI_FOLDER_NAME__ the folder name where you find a file called wsgi.py
-#
+# 
 ###############################################################################
 # Criando o arquivo __GUNICORN_FILE_NAME__.socket
 sudo nano /etc/systemd/system/__GUNICORN_FILE_NAME__.socket

@@ -5,7 +5,7 @@
 # __APP_ABSOLUTE_PATH__ = Replace with the path to the folder for the project
 # __STATIC_ABSOLUTE_PATH__ = Replace with the path to the folder for static files
 # __MEDIA_ABSOLUTE_PATH__ = Replace with the path to the folder for media files
-# __GUNICORN_FILE_NAME__ = Replace with your unix socket name (don't add .socket)
+# contact = Replace with your unix socket name (don't add .socket)
 # 
 # Set timezone
 # List - timedatectl list-timezones
@@ -32,9 +32,9 @@ server {
     alias __MEDIA_ABSOLUTE_PATH__;
   }
 
-  # ATTENTION: __GUNICORN_FILE_NAME__
+  # ATTENTION: contact
   location / {
-    proxy_pass http://unix:/run/__GUNICORN_FILE_NAME__.socket;
+    proxy_pass http://unix:/run/contact.socket;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';
