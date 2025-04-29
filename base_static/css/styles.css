@@ -4,8 +4,8 @@
     box-sizing: border-box;
   }
   
-html, body {
-    height: 100%;
+html{
+    font-size: 67.5%;
   }
   
 img, picture, video, canvas, svg {
@@ -13,30 +13,33 @@ img, picture, video, canvas, svg {
     max-width: 100%;
   }
   
-input, button, textarea, select {
+/* input, button, textarea, select {
     font: inherit;
-  }
+  } */
   
 /* p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   } */
 body {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(107, 105, 105);
+    align-items: center;
     justify-items: center;
-    
-    
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
 }
 .menu {
     padding: 1rem;
 }
 .menu h1 a {
+  
     color: white;
 }
 .conteiner {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     gap: 1rem;
     padding: 2rem;
 }
@@ -47,12 +50,96 @@ body {
     
     background-color: rgb(6, 248, 6);
     border-radius: 10rem;
-    box-shadow:  0 10px 14px rgba(0, 255, 76, 0.5);
+    box-shadow:  0 10px 10px rgba(0, 255, 76, 0.3);
     /* width: 80%; */
+    justify-content: center;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 a {
+    display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 1rem;
     align-items: center;
+    justify-content: center;
+}
+
+.main-sect input {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2px;
+}
+input {
+  border-radius: 22px;
+  border: 1px solid red;
+
+}
+.table-caption input:focus {
+  font-size: 2.5rem;
+  box-shadow:0 8px 8px 8px rgba(245, 245, 245, 0.2);
+  transition: all 0.5s ease;
+  border-radius: 0;
+}
+
+.table-menu {
+  border: 0.01rem solid blue;
+  padding: 1rem;
+  margin: 1rem;
+  /* font-size: 2.8rem; */
+  align-items: center;
+}
+.table-thead {
+  height: 3rem;
+  font-size: 2rem;
+  background-color: rgb(0, 0, 0);
+  
+}
+/* .table-tr {
+  padding: 10rem;
+} */
+.table-th {
+  margin: 5rem;
+}
+.table-tbody {
+  /* background: rgb(67, 143, 241); */
+  font-size: 1.5rem;
+  
+}
+.table-td {
+  padding: 2rem;
+ 
+}
+.we {
+  padding: 1.5rem;
+
+}
+.link-a{
+  color: rgb(0, 0, 0);
+  
+}
+.btn-adc {
+  border: 0.1rem solid rgb(155, 145, 145);
+  margin: 1rem;
+  font-size: 2rem;
+}
+.single-perfil {
+  font-size: 2.5rem;
+  margin: 1.5rem;
+  padding: 1rem;
 }

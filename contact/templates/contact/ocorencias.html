@@ -1,0 +1,59 @@
+{% extends "global/base.html" %}
+{% block contente %}
+
+<div>
+    <div>
+        <a class="btn-adc" href="">Adicionar</a>
+    </div>
+    <section class="main-sect">
+
+        <div class="table-caption">
+            <form action="" method='get' >
+                <input type="search" 
+                placeholder="Busca Ocorrencia"
+                id="search"
+                name = "q">
+            </form>
+        </div>
+
+        <div class="responsive-table">
+            <table class="table-menu">
+
+                <thead class="table-thead">
+
+                    <tr class="table-tr">
+
+                        <th class="table-th">Dia</th>
+                        <th class="table-th">nome_Resp</th>
+                        
+                    </tr>
+
+                </thead>
+
+                <tbody class="table-tbody">
+                    {% for ocorrencia in ocorrencias %}
+                    <tr>
+                        <td class="table-td">
+                            <a class="link-a" 
+                            href=" {% url 'contact:ocorrencias_id' ocorrencia.id %} "
+                            >
+                                {{ ocorrencia.data }}
+                            </a>
+                        </td>
+
+                        <td class="table-td">
+                            {{ ocorrencia.nomeResp }}
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </section>
+</div>
+{% endblock contente %}

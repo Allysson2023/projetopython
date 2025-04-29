@@ -6,19 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title> Entregas </title>
+    <title>Registros - {{ site_title }}   </title>
 </head>
 
 <body>
     <div class="menu">
-        <h1><a href=" {% url 'contact:index' %} ">BEM VINDO</a></h1>
+        <h1>
+            <a href=" {% url 'contact:index' %} ">
+                REGISTROS
+            </a>
+        </h1>
     </div>
     <h2> App no Servidor - Allysson</h2>
     <div class="conteiner">
-        <h2 class="registra-link"><a href="#">Registra Entregas</a></h2>
+        <h2 class="registra-link">
+            <a href=" {% url 'contact:entregas' %} ">
+                Entregas
+            </a>
+        </h2>
 
-        <h2 class="registra-link"><a href="#">Registra Ocorrencia</a></h2>
+        <h2 class="registra-link">
+            <a href=" {% url 'contact:ocorrencia' %} ">
+                Ocorrencia
+            </a>
+        </h2>
     </div>
+
     <main>
         {% block contente %}{% endblock contente %}
     </main>

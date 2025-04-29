@@ -1,3 +1,76 @@
 {% extends "global/base.html" %}
 {% block contente %}
+<div>
+    <div>
+        <a class="btn-adc" href="">Adicionar</a>
+    </div>
+    <section class="main-sect">
+
+        <div class="table-caption">
+            <form action="{% url 'contact:search_entrega' %}" method='get' >
+                <input type="search" 
+                placeholder="Busca Entregas"
+                id="search"
+                name = "q"
+                value=' {{ request.GET.q.strip }} '
+                required>
+            </form>
+        </div>
+
+        {% if entregas %}
+        
+        <div class="responsive-table">
+            <table class="table-menu">
+                
+                <thead class="table-thead">
+                    
+                    <tr class="table-tr">
+                        
+                        <th class="table-th">Dia</th>
+                        <th class="table-th">Apt</th>
+                        <th class="table-th">
+                            <div class="we">
+                                Receberam
+                            </div>
+                        </th>
+                        
+                    </tr>
+                    
+                </thead>
+                
+                <tbody class="table-tbody">
+                    {% for entrega in entregas %}
+                    <tr>
+                        <td class="table-td">
+                            <a class="link-a" href="{% url 'contact:entregas_id' entrega.id %} ">
+                                {{ entrega.data }}
+                            </a>
+                        </td>
+                        
+                        <td class="table-td">
+                            {{ entrega.apt }}
+                        </td>
+                        
+                        
+                        <td class="table-td">
+                            {{ entrega.receberam }}
+                        </td>
+                    </tr>
+                    
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class='single-perfil'>
+            Nada encontrado...
+        </div>
+
+        {% endif %}
+
+
+
+
+    </section>
+</div>
 {% endblock contente %}
