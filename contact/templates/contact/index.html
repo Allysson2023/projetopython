@@ -2,22 +2,22 @@
 {% block contente %}
 <div>
     <div>
-        <a class="btn-adc" href="">Adicionar</a>
+        <a class="btn-adc" href=" {% url 'contact:create_entregas' %} ">Adicionar</a>
     </div>
     <section class="main-sect">
 
         <div class="table-caption">
             <form action="{% url 'contact:search_entrega' %}" method='get' >
                 <input type="search" 
-                placeholder="Busca Entregas"
+                placeholder="Buscar entrega"
                 id="search"
                 name = "q"
-                value=' {{ request.GET.q.strip }} '
+                value='{{ request.GET.q.strip }}'
                 required>
             </form>
         </div>
 
-        {% if entregas %}
+        {% if entrega_page_obj %}
         
         <div class="responsive-table">
             <table class="table-menu">
@@ -39,7 +39,7 @@
                 </thead>
                 
                 <tbody class="table-tbody">
-                    {% for entrega in entregas %}
+                    {% for entrega in entrega_page_obj %}
                     <tr>
                         <td class="table-td">
                             <a class="link-a" href="{% url 'contact:entregas_id' entrega.id %} ">
@@ -60,6 +60,9 @@
                     {% endfor %}
                 </tbody>
             </table>
+
+            {% include "contact/pag_entrega.html" %}
+
         </div>
         {% else %}
         <div class='single-perfil'>

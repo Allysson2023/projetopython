@@ -1,0 +1,21 @@
+{% if ocorrencia_page_obj %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if ocorrencia_page_obj.has_previous %}
+        <a href="?page=1&q={{ request.GET.q.strip }}">&laquo; Inicio</a>
+        <a href="?page={{ ocorrencia_page_obj.previous_page_number }}&q={{ request.GET.q.strip }}">Volta</a>
+        {% endif %}
+        
+        <span class="current">
+            Pag {{ ocorrencia_page_obj.number }} de {{ ocorrencia_page_obj.paginator.num_pages }}.
+        </span>
+        
+        {% if ocorrencia_page_obj.has_next %}
+        <a href="?page={{ ocorrencia_page_obj.next_page_number }}&q={{ request.GET.q.strip }}">Proxima</a>
+        <a href="?page={{ ocorrencia_page_obj.paginator.num_pages }}&q={{ request.GET.q.strip }}">final &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+{% endif %}

@@ -2,11 +2,28 @@
 {% block contente %}
 <div>
     <div class='single-perfil'>
-        <h1>id:  {{ entrega.id }}  </h1> 
+        {% comment %} <h1>id:  {{ entrega.id }}  </h1>  {% endcomment %}
         <p><b>Nome:</b> {{ entrega.nome }}</p>
         <p><b>data:</b> {{ entrega.data }}</p>
         <p><b>apt:</b> {{ entrega.apt }}</p>
         <p><b>receberam:</b> {{ entrega.receberam }}</p>
+
+        {% if entrega.fotos %}
+        <p>
+            <img src=" {{ entrega.fotos.url }} " alt=" {{ entrega.nome }} ">
+        </p>
+        {% endif %}
     </div>
+
+    <div class="form-buttons">
+        <a href="{% url 'contact:update_entregas' entrega.id %}" class="btn atualizar">
+          Atualizar
+        </a>
+      
+        <form action='{% url "contact:delete_entrega" entrega.id %}'  method="POST" class="form-inline">
+          {% csrf_token %}
+          <button type="submit" class="btn apagar">Apagar</button>
+        </form>
+      </div>
 </div>
 {% endblock contente %}

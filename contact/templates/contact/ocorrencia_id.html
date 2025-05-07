@@ -2,9 +2,19 @@
 {% block contente %}
 <div>
     <div class='single-perfil'>
-        <h1>Nome:  {{ ocorrencia.nomeResp }}  </h1> 
+        {{ ocorrencia.nomeResp }} 
         <p><b>Data:</b> {{ ocorrencia.data }}</p>
         <p><b>Ocorrencias:</b> {{ ocorrencia.ocorrencia }}</p>
     </div>
+    <div class="form-buttons">
+        <a href="{% url 'contact:update_ocorrencia' ocorrencia.id %}" class="btn atualizar">
+          Atualizar
+        </a>
+      
+        <form action="{% url 'contact:delete_ocorrencia' ocorrencia.id %}" method="POST" class="form-inline">
+          {% csrf_token %}
+          <button type="submit" class="btn apagar">Apagar</button>
+        </form>
+      </div>
 </div>
 {% endblock contente %}

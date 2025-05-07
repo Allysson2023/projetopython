@@ -3,18 +3,22 @@
 
 <div>
     <div>
-        <a class="btn-adc" href="">Adicionar</a>
+        <a class="btn-adc" href=" {% url 'contact:create_ocorrencia' %} ">Adicionar</a>
     </div>
     <section class="main-sect">
 
         <div class="table-caption">
-            <form action="" method='get' >
+            <form action="{% url 'contact:search_ocorrencias' %}" method='get' >
                 <input type="search" 
-                placeholder="Busca Ocorrencia"
-                id="search"
-                name = "q">
+                placeholder="Buscar ocorrencia"
+                id="Buscar"
+                name = "q"
+                value='{{ request.GET.q.strip }}'
+                required>
             </form>
         </div>
+
+        {% if ocorrencia_page_obj %}
 
         <div class="responsive-table">
             <table class="table-menu">
@@ -31,7 +35,7 @@
                 </thead>
 
                 <tbody class="table-tbody">
-                    {% for ocorrencia in ocorrencias %}
+                    {% for ocorrencia in ocorrencia_page_obj %}
                     <tr>
                         <td class="table-td">
                             <a class="link-a" 
@@ -50,9 +54,17 @@
                     {% endfor %}
                 </tbody>
             </table>
+
+            {% include "contact/pag_ocorrencia.html" %}
+
         </div>
 
+        {% else %}
+        <div class='single-perfil'>
+            Nada encontrado...
+        </div>
 
+        {% endif %}
 
     </section>
 </div>
